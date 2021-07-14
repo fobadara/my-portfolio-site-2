@@ -65,4 +65,4 @@ Lots of appreciations to my wife who keeps supporting me
 
 📝 #License
 
-This project is licensed by [MIT](../LICENSE)
+This project is licensed by [MIT](LICENSE)
