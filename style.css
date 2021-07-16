@@ -1,0 +1,92 @@
+@media screen and (max-width: 400px) {
+  /* General */
+  body {
+    all: unset;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+  }
+
+  .main-container {
+    flex-flow: column wrap;
+    justify-content: space-around;
+  }
+
+  /* navigation */
+  .navigation {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .welcome {
+    font-weight: bold;
+    font-size: 20px;
+    color: #172b4d;
+    flex-grow: 8;
+  }
+
+  .hamburger {
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+
+  /* header */
+  .top-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    background: url('images/header-illsutration-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #header-1-container {
+    font: 1.3em normal bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 3em;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #hey {
+    margin-bottom: 0;
+    margin-top: 2em;
+    color: #172b4d;
+    text-align: center;
+  }
+
+  #job {
+    margin-top: 0;
+    color: #36b37e;
+    text-align: center;
+  }
+
+  /* contact links */
+  .nav-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .paragraph {
+    width: 80%;
+    text-align: center;
+    font-size: 20px;
+    color: #172b4d;
+  }
+
+  .nav-container > * {
+    margin-right: 1em;
+  }
+}
