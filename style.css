@@ -12,8 +12,13 @@
     list-style-type: none;
   }
 
-  .main-container {
+  .container {
     display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+  }
+
+  .main-container {
     flex-flow: column wrap;
     align-content: center;
   }
