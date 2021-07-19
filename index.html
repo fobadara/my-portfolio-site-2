@@ -215,12 +215,12 @@
                         I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
                     </h3>    
                 </div>
-                <form action="#" class="form">
+                <form action="https://formspree.io/f/xrgraoke" method="post" class="form">
                     <div id="name">
-                        <input type="text" class="entry" placeholder="First Name"><br>
-                         <input type="text" class="entry" placeholder="Last Name">
+                        <input name="name" type="text" class="entry" placeholder="First Name" maxlength="30" required><br>
+                         <input name="email" type="email" class="entry" placeholder="Please input your email" required>
                     </div>
-                    <textarea name="comment" id="comment" cols="30" rows="10" class="entry" placeholder="Type in something"></textarea>    
+                    <textarea name="comment" id="comment" maxlength="500" cols="30" rows="10" class="entry" placeholder="Type in something" required></textarea>    
                     <button type="submit" class="btn" id="get-in-touch">Get in touch</button>
                 </form>
             </article>
