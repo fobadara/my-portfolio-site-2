@@ -10,6 +10,11 @@
     <body>
         <nav class="container navigation">
             <div class="welcome">Welcome</div>
+            <ul class="nav-list-cont">
+                <li>Portfolio</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
             <div class="hamburger"><img src="images/ham.svg" alt=""></div>
         </nav>
         <header class="header-container top-header">
@@ -152,10 +157,12 @@
                 <div class="header-container-about">
                     <h2 class="header header-2" id="about-head">About me</h2>
                 </div>
-                <div class="about-paragraph paragraph">
-                    I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, 
-                    don’t hestiate to contact me.
-                </div>
+                <div class="abt-para-cont">
+                    <div class="about-paragraph paragraph">
+                        I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, 
+                        don’t hestiate to contact me.
+                    </div>
+                </div>    
                 <div class="btn-container" id="resume-btn-container">
                     <button type="button" class="btn" id="resume-btn">Get My Resume</button>
                 </div>
@@ -209,18 +216,16 @@
                     </ul>
                 </div>
             </article>       
-            <article class="container">
+            <article class="container form-sec">
                 <div class="last-head-container header">
                     <h3 class="header-3">
                         I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
                     </h3>    
                 </div>
                 <form action="https://formspree.io/f/xrgraoke" method="post" class="form">
-                    <div id="name">
-                        <input name="name" type="text" class="entry" placeholder="First Name" maxlength="30" required><br>
-                         <input name="email" type="email" class="entry" placeholder="Please input your email" required>
-                    </div>
-                    <textarea name="comment" id="comment" maxlength="500" cols="30" rows="10" class="entry" placeholder="Type in something" required></textarea>    
+                    <input name="name" type="text" class="entry" placeholder="Full Name" maxlength="30" required><br>
+                    <input name="email" type="email" class="entry" placeholder="Please input your email" required><br>
+                    <textarea name="comment" id="comment" maxlength="500" cols="30" rows="10" class="entry" placeholder="Type in something" required></textarea><br>    
                     <button type="submit" class="btn" id="get-in-touch">Get in touch</button>
                 </form>
             </article>
