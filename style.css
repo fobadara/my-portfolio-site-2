@@ -9,7 +9,6 @@ body {
 }
 
 * {
-  /* border: solid magenta; */
   box-sizing: border-box;
 }
 
@@ -51,6 +50,7 @@ button {
 
 button:hover {
   background-color: #36b37f;
+  transform: translateY(-2px);
 }
 
 button:active {
@@ -387,12 +387,6 @@ input {
   padding: 0.7em;
 }
 
-.names > * {
-  display: block;
-  width: 100%;
-  margin-top: 1em;
-}
-
 #get-in-touch {
   margin-left: 40%;
   margin-top: 1em;
@@ -525,15 +519,6 @@ input {
     margin-right: 0;
     margin-top: 3em;
     border: 2px;
-  }
-
-  .names {
-    display: flex;
-    margin-bottom: 0.5em;
-  }
-
-  .names > input:nth-of-type(1) {
-    margin-right: 0.5em;
   }
 
   #get-in-touch {
