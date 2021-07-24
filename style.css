@@ -1,7 +1,9 @@
 /* General */
 body {
   all: unset;
-  background: url('images/header-illsutration-mobile.svg') no-repeat,  url('images/frame.svg') no-repeat bottom right;
+  background:
+    url('images/header-illsutration-mobile.svg') no-repeat,
+    url('images/frame.svg') no-repeat bottom right;
   background-size: contain, 10%;
   width: 100%;
 }
@@ -155,7 +157,7 @@ button:active {
 .header-2-container {
   font-size: 1.5em;
   margin-bottom: -0.5em;
-  word-wrap: wrap;
+  flex-wrap: wrap;
   display: flex;
   justify-content: center;
 }
@@ -169,7 +171,7 @@ button:active {
   background-repeat: no-repeat;
   justify-self: center;
   width: 19%;
-  margin-left:2em;
+  margin-left: 2em;
   margin-bottom: 1.8em;
 }
 
@@ -191,7 +193,7 @@ button:active {
   flex-flow: column nowrap;
   align-items: center;
   margin-left: auto;
-  margin-right: auto; 
+  margin-right: auto;
 }
 
 .sample-containers * {
@@ -254,7 +256,7 @@ button:active {
   display: flex;
   justify-content: center;
   text-align: center;
-  min-width: 99vw; 
+  min-width: 99vw;
   min-height: 30%;
   background: url('images/mask-group.svg');
   background-repeat: no-repeat;
@@ -334,7 +336,7 @@ footer .btn {
   margin: 0 5px 10px 0;
   padding-top: 0.5em;
   padding-left: 2px;
-  padding-right: 2px; 
+  padding-right: 2px;
   padding-bottom: 5px;
   border-radius: 8px;
   background-color: #fff;
@@ -416,7 +418,7 @@ input {
 @media only screen and (min-width: 600px) {
   .navigation {
     justify-content: center;
-    margin-top: 0px;
+    margin-top: 0;
     font-size: xx-small;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
@@ -427,11 +429,11 @@ input {
   }
 
   .nav-list-cont {
-    display: flex;    
+    display: flex;
   }
 
   .nav-list-cont li {
-    margin-right: 2em;    
+    margin-right: 2em;
   }
 
   .top-header {
@@ -441,7 +443,7 @@ input {
   .paragraph {
     width: 80%;
   }
-  
+
   .main-sec {
     margin-top: 10em;
   }
@@ -452,7 +454,7 @@ input {
   }
 
   .indicator {
-   display: none;  
+    display: none;
   }
 
   .header-2-container {
@@ -460,10 +462,10 @@ input {
     width: 80vw;
     word-wrap: normal;
   }
-  
+
   .cards {
     grid-template-columns: repeat(2, 1fr);
-    width: 98vw; 
+    width: 98vw;
   }
 
   .all-skills {
@@ -480,7 +482,7 @@ input {
   }
 }
 
-@media only screen and (min-width: 700px) {   
+@media only screen and (min-width: 700px) {
   #home-paragraph {
     width: 53.65%;
   }
@@ -498,7 +500,6 @@ input {
   .about-paragraph {
     width: 53.65%;
   }
-
 
   .form-sec {
     max-width: 80%;
@@ -521,11 +522,11 @@ input {
 
   .form {
     width: 50%;
-    margin-right: 0px;
+    margin-right: 0;
     margin-top: 3em;
     border: 2px;
   }
-    
+
   .names {
     display: flex;
     margin-bottom: 0.5em;
@@ -540,10 +541,11 @@ input {
   }
 
   .skillset {
-    background: url('images/box.svg') no-repeat,
-    url('images/illustration-2-contact-form-desktop.svg ') no-repeat,
-    url('images/contact-form-illustratoin-3-desktop.svg') no-repeat;
-    background-position: bottom left, 20% 100%, right 100%; 
+    background:
+      url('images/box.svg') no-repeat,
+      url('images/illustration-2-contact-form-desktop.svg ') no-repeat,
+      url('images/contact-form-illustratoin-3-desktop.svg') no-repeat;
+    background-position: bottom left, 20% 100%, right 100%;
   }
 }
 
@@ -553,9 +555,9 @@ input {
     background-repeat: no-repeat;
     background-size: 1200px;
   }
-  
+
   .cards {
-    max-width: fit-content;
+    width: fit-content;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 1em;
   }
