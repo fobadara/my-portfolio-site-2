@@ -1,35 +1,36 @@
-# my-portfolio-site-1
+## my-portfolio-site-1
 
 A site filled with some of my best works and my contact information
 
 ![screenshot](images/mob-portfolio-screenshot(2).gif)
 
-Built With
+# Built With
 
-●HTML
+● HTML
 
-●CSS
+● CSS
 
-●Linters
+● Linters
 
-#Getting Started
+# Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
-⬜ clone the app by running this command ```git clone https://github.com/fobadara/my-portfolio-site-1.git```
+⬜ clone the app by running this command ```git clone https://github.com/fobadara/my-portfolio-site-2.git```
 
-⬜ Run this command ```cd my-portfolio-site-1```
+⬜ Run this command ```cd my-portfolio-site-2```
 
 ⬜ Open in browser
 
-#Prerequisites 
-⬜ You will be needing: 
+# Prerequisites 
+
+You will be needing: 
 
 ⬜ A web browser to view output 
 
 ⬜ A text editor or terminal
 
-#Run tests 
+# Run tests 
 
 You can run tests by following these steps:
 
@@ -39,7 +40,7 @@ You can run tests by following these steps:
 
 ⬜ I have created a pull request which runs linters or you could simply create a pull rrequest of your own 
 
-#Authors 
+# Authors 
 
 👤 Abdulfatai Badara
 
@@ -47,22 +48,22 @@ GitHub: github.com/fobadara
 
 Twitter: fob90s@twitter.com 
 
-🤝 #Contributing 
+# 🤝 Contributing 
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the issues page.
 
-#Show your support 
+# Show your support 
 
 Give a ⭐️ if you like this project!
 
-#Acknowledgments 
+# Acknowledgments 
 
 Hat tip to anyone whose code was used
 
 Lots of appreciations to my wife, Habeebah who keeps supporting me
 
-📝 #License
+# 📝 License
 
 This project is licensed by [MIT](LICENSE)

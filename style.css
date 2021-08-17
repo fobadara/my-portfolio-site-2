@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;600;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;600;800&display=swap");
 
 /* General */
 body {
   all: unset;
   background:
-    url('images/header-illsutration-mobile.svg') no-repeat,
-    url('images/frame.svg') no-repeat bottom right;
+    url("images/header-illsutration-mobile.svg") no-repeat center 1%,
+    url("images/frame.svg") no-repeat right 96%;
   background-size: contain, 10%;
   width: 100%;
 }
@@ -47,13 +47,14 @@ button {
   background-color: #36b37f;
   width: 6.5em;
   height: 3em;
+  border: none;
   border-color: #36b37f;
   border-radius: 4px;
 }
 
 button:hover {
   background-color: #36b37f;
-  box-shadow: 5px 5px 2px rgb(233, 231, 231);
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 button:active {
@@ -112,7 +113,7 @@ button:active {
 /* all header color */
 .header {
   color: #344563;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 #hey {
@@ -135,13 +136,13 @@ button:active {
 }
 
 .nav-container > * {
-  margin-right: 1em;
+  margin-right: 1.5em;
 }
 
 .action-container {
   width: 90vw;
   height: 3em;
-  background: url('images/action.svg');
+  background: url("images/action.svg");
   background-size: 20rem;
   background-repeat: no-repeat;
   background-position: center;
@@ -170,7 +171,7 @@ button:active {
 }
 
 .indicator {
-  background: url('images/indicator.svg');
+  background: url("images/indicator.svg");
   background-repeat: no-repeat;
   justify-self: center;
   width: 19%;
@@ -214,7 +215,7 @@ button:active {
   height: 2em;
   margin-bottom: 1em;
   color: #344563;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 /* Using flexbox on items within card */
@@ -249,7 +250,7 @@ button:active {
   grid-template-columns: auto;
   justify-items: center;
   text-align: center;
-  background: url('images/illustration-about-me-mobile.svg');
+  background: url("images/illustration-about-me-mobile.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -261,7 +262,7 @@ button:active {
   text-align: center;
   min-width: 99vw;
   min-height: 30%;
-  background: url('images/mask-group.svg');
+  background: url("images/mask-group.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
@@ -387,7 +388,14 @@ footer .btn {
 }
 
 input {
+  border: 1px solid #d0d9d4;
   padding: 0.7em;
+  border-radius: 4px;
+}
+
+textarea {
+  border: 1px solid #60c095;
+  border-radius: 4px;
 }
 
 .names > * {
@@ -403,6 +411,7 @@ input {
 
 .footer * {
   justify-content: center;
+  text-align: center;
 }
 
 #code-lang-list * {
@@ -416,155 +425,15 @@ input {
 .mail {
   color: #42526e;
   text-decoration: none;
+  margin-left: 2em;
 }
 
-@media only screen and (min-width: 600px) {
-  .navigation {
-    justify-content: center;
-    margin-top: 0;
-    font-size: xx-small;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-  }
-
-  .navigation div {
-    display: none;
-  }
-
-  .nav-list-cont {
-    display: flex;
-  }
-
-  .nav-list-cont li {
-    margin-right: 2em;
-  }
-
-  .top-header {
-    margin-top: 5em;
-  }
-
-  .paragraph {
-    width: 80%;
-  }
-
-  .main-sec {
-    margin-top: 10em;
-  }
-
-  .sample-jobs {
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-  }
-
-  .indicator {
-    display: none;
-  }
-
-  .header-2-container {
-    grid-column: span 3;
-    width: 80vw;
-    word-wrap: normal;
-  }
-
-  .cards {
-    grid-template-columns: repeat(2, 1fr);
-    width: 98vw;
-  }
-
-  .all-skills {
-    display: grid;
-    grid-template-columns: repeat(3, 0.8fr);
-    gap: 0.5em;
-    min-width: 80%;
-    margin-left: 1em;
-    margin-right: 1em;
-  }
-
-  .all-skills * {
-    width: auto;
-  }
-}
-
-@media only screen and (min-width: 700px) {
-  #home-paragraph {
-    width: 53.65%;
-  }
-
-  .aside-container {
-    background: url('images/illustration-about-me-2-desktop.svg') no-repeat, url('images/illustration-about-me-desktop.svg') no-repeat;
-    background-position: left bottom, right;
-  }
-
-  .header-container-about {
-    margin-top: 1em;
-    background: none;
-  }
-
-  .about-paragraph {
-    width: 53.65%;
-  }
-
-  .form-sec {
-    max-width: 80%;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 15em;
-  }
-
-  .last-head-container {
-    text-align: initial;
-    width: 50%;
-    padding-right: 2em;
-    justify-content: stretch;
-    align-items: stretch;
-  }
-
-  .last-head-container > * {
-    font-size: 30px;
-  }
-
-  .form {
-    width: 50%;
-    margin-right: 0;
-    margin-top: 3em;
-    border: 2px;
-  }
-
-  .names {
-    display: flex;
-    margin-bottom: 0.5em;
-  }
-
-  .names > input:nth-of-type(1) {
-    margin-right: 0.5em;
-  }
-
-  #get-in-touch {
-    margin-left: 0;
-  }
-
-  .skillset {
-    background:
-      url('images/box.svg') no-repeat,
-      url('images/illustration-2-contact-form-desktop.svg ') no-repeat,
-      url('images/contact-form-illustratoin-3-desktop.svg') no-repeat;
-    background-position: bottom left, 20% 100%, right 100%;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  body {
-    background: url('images/Header-llustration-desktop.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  .cards {
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 1em;
-  }
-
-  .sample-containers {
-    min-width: 20em;
-  }
+.footer::after {
+  content: " ";
+  display: block;
+  width: 130px;
+  height: 5px;
+  border-radius: 2px;
+  margin: 10em 40% 1em;
+  background: #172b4d;
 }
