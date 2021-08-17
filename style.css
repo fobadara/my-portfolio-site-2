@@ -46,6 +46,7 @@ button {
   background-color: #36b37f;
   width: 6.5em;
   height: 3em;
+  border: none;
   border-color: #36b37f;
   border-radius: 4px;
 }
@@ -409,6 +410,7 @@ textarea {
 
 .footer * {
   justify-content: center;
+  text-align: center;
 }
 
 #code-lang-list * {
@@ -424,3 +426,14 @@ textarea {
   text-decoration: none;
   margin-left: 2em;
 }
+
+.footer::after {
+  content: " ";
+  display: block;
+  width: 128px;
+  height: 5px;
+  border-radius: 2px;
+  margin: 147px auto 10px;
+  background: #172b4d;
+}
+
