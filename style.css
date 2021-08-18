@@ -8,16 +8,11 @@ body {
     url("images/frame.svg") no-repeat right 99%;
   background-size: contain, 10%;
   font-family: "Inter", sans-serif;
-  width: 100%;
   overflow-x: hidden;
 }
 
 * {
   box-sizing: border-box;
-}
-
-section {
-  width: 100%;
 }
 
 li {
