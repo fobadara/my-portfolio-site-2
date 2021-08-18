@@ -250,9 +250,8 @@ button:active {
   grid-template-columns: auto;
   justify-items: center;
   text-align: center;
-  background: url("images/illustration-about-me-mobile.svg");
+  background: url("images/illustration-about-me-mobile.svg") no-repeat left 50%;
   background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .header-container-about {
@@ -261,10 +260,8 @@ button:active {
   text-align: center;
   min-width: 99vw;
   min-height: 30%;
-  background: url("images/mask-group.svg");
-  background-repeat: no-repeat;
+  background: url("images/mask-group.svg") no-repeat right;
   background-size: contain;
-  background-position: right;
 }
 
 #about-head {
