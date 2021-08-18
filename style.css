@@ -1,11 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;600;800&display=swap");
+
 /* General */
 body {
   all: unset;
   background:
-    url('images/header-illsutration-mobile.svg') no-repeat,
-    url('images/frame.svg') no-repeat bottom right;
+    url("images/header-illsutration-mobile.svg") no-repeat center 1%,
+    url("images/frame.svg") no-repeat right 99%;
   background-size: contain, 10%;
-  width: 100%;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
 }
 
 * {
@@ -50,7 +53,7 @@ button {
 
 button:hover {
   background-color: #36b37f;
-  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 button:active {
@@ -62,7 +65,7 @@ button:active {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 1em;
+  margin: 1.1em;
   flex: 1 1 auto;
 }
 
@@ -109,7 +112,7 @@ button:active {
 /* all header color */
 .header {
   color: #344563;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 #hey {
@@ -138,7 +141,7 @@ button:active {
 .action-container {
   width: 90vw;
   height: 3em;
-  background: url('images/action.svg');
+  background: url("images/action.svg");
   background-size: 20rem;
   background-repeat: no-repeat;
   background-position: center;
@@ -156,7 +159,6 @@ button:active {
 
 .header-2-container {
   font-size: 1.5em;
-  margin-bottom: -0.5em;
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
@@ -167,7 +169,7 @@ button:active {
 }
 
 .indicator {
-  background: url('images/indicator.svg');
+  background: url("images/indicator.svg");
   background-repeat: no-repeat;
   justify-self: center;
   width: 19%;
@@ -209,9 +211,9 @@ button:active {
 .sample-img-txt-head-container {
   width: 60%;
   height: 2em;
-  margin-bottom: 0;
+  margin-bottom: 1em;
   color: #344563;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 /* Using flexbox on items within card */
@@ -227,12 +229,14 @@ button:active {
 .code-lang-container * {
   border: solid #ebf0ee;
   background-color: #ebf0ee;
-  border-radius: 8px;
+  border-radius: 4px;
   color: #36b37e;
   width: max-content;
   margin-right: 0.5em;
   padding-right: 0.2em;
   padding-left: 0.1em;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .ruby-on-rails {
@@ -246,22 +250,18 @@ button:active {
   grid-template-columns: auto;
   justify-items: center;
   text-align: center;
-  background: url('images/illustration-about-me-mobile.svg');
+  background: url("images/illustration-about-me-mobile.svg") no-repeat left 50%;
   background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .header-container-about {
-  /* border: solid firebrick; */
   display: flex;
   justify-content: center;
   text-align: center;
   min-width: 99vw;
   min-height: 30%;
-  background: url('images/mask-group.svg');
-  background-repeat: no-repeat;
+  background: url("images/mask-group.svg") no-repeat right;
   background-size: contain;
-  background-position: right;
 }
 
 #about-head {
@@ -277,12 +277,15 @@ button:active {
 
 .about-paragraph {
   margin-bottom: 20px;
-  font-weight: lighter;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: normal;
 }
 
 .btn {
   width: 122px;
   margin-left: 1em;
+  border: none;
 }
 
 footer .btn {
@@ -410,11 +413,14 @@ input {
 }
 
 @media only screen and (min-width: 600px) {
+  #home-paragraph {
+    line-height: 1.6em;
+  }
+
   .navigation {
     justify-content: center;
-    margin-top: 0;
-    font-size: xx-small;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 2.8em 0 3em;
+    font-size: small;
     font-weight: 600;
   }
 
@@ -477,18 +483,36 @@ input {
 }
 
 @media only screen and (min-width: 700px) {
+  body {
+    background: none;
+    background: url("images/Header-llustration-desktop.svg") no-repeat;
+    background-size: contain;
+  }
+
+  .header-1-container {
+    width: 50%;
+    margin-bottom: 2em;
+  }
+
   #home-paragraph {
     width: 53.65%;
   }
 
   .aside-container {
-    background: url('images/illustration-about-me-2-desktop.svg') no-repeat, url('images/illustration-about-me-desktop.svg') no-repeat;
+    background:
+      url("images/illustration-about-me-2-desktop.svg") no-repeat,
+      url("images/illustration-about-me-desktop.svg") no-repeat;
+    background-size: 20%, 80%;
     background-position: left bottom, right;
   }
 
   .header-container-about {
     margin-top: 1em;
     background: none;
+  }
+
+  #frame-wrk-list {
+    min-width: 70%;
   }
 
   .about-paragraph {
@@ -527,27 +551,44 @@ input {
 
   .skillset {
     background:
-      url('images/box.svg') no-repeat,
-      url('images/illustration-2-contact-form-desktop.svg ') no-repeat,
-      url('images/contact-form-illustratoin-3-desktop.svg') no-repeat;
+      url("images/box.svg") no-repeat,
+      url("images/illustration-2-contact-form-desktop.svg ") no-repeat,
+      url("images/contact-form-illustratoin-3-desktop.svg") no-repeat;
     background-position: bottom left, 20% 100%, right 100%;
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 992px) {
   body {
-    background: url('images/Header-llustration-desktop.svg');
+    background: url("images/Header-llustration-desktop.svg");
     background-repeat: no-repeat;
-    background-size: 1200px;
+    background-size: contain;
+  }
+
+  .header-1-container {
+    width: 80%;
+    margin-bottom: -2em;
   }
 
   .cards {
-    width: fit-content;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 1em;
+    grid-column-gap: 0.3em;
   }
 
   .sample-containers {
     min-width: 20em;
+  }
+
+  .aside-container {
+    background-size: auto;
+  }
+
+  .all-skills {
+    display: grid;
+    grid-column-gap: 2.5em;
+  }
+
+  footer .mail-container {
+    margin: 1em 0 2em;
   }
 }
