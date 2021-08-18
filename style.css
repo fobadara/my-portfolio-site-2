@@ -4,9 +4,10 @@
 body {
   all: unset;
   background:
-    url('images/header-illsutration-mobile.svg') no-repeat,
-    url('images/frame.svg') no-repeat bottom right;
+    url('images/header-illsutration-mobile.svg') no-repeat center 1%,
+    url('images/frame.svg') no-repeat right 99%;
   background-size: contain, 10%;
+  font-family: 'Inter', sans-serif;
   width: 100%;
 }
 
@@ -53,7 +54,7 @@ button {
 
 button:hover {
   background-color: #36b37f;
-  box-shadow: 5px 5px 2px rgb(233, 231, 231);
+  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 button:active {
@@ -230,12 +231,14 @@ button:active {
 .code-lang-container * {
   border: solid #ebf0ee;
   background-color: #ebf0ee;
-  border-radius: 8px;
+  border-radius: 4px;
   color: #36b37e;
   width: max-content;
   margin-right: 0.5em;
   padding-right: 0.2em;
   padding-left: 0.1em;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .ruby-on-rails {
@@ -280,12 +283,15 @@ button:active {
 
 .about-paragraph {
   margin-bottom: 20px;
-  font-weight: lighter;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: normal;
 }
 
 .btn {
   width: 122px;
   margin-left: 1em;
+  border: none;
 }
 
 footer .btn {
@@ -419,11 +425,14 @@ input {
 }
 
 @media only screen and (min-width: 600px) {
+  #home-paragraph{
+    line-height: 1.6em;
+  }
+
   .navigation {
     justify-content: center;
-    margin-top: 0;
-    font-size: xx-small;
-    font-family: 'Inter', sans-serif;
+    margin: 2.8em 0 3em;
+    font-size: small;
     font-weight: 600;
   }
 
@@ -456,6 +465,9 @@ input {
     justify-items: center;
   }
 
+  .header-2-container {
+    margin-bottom: 1em;
+  }
   .indicator {
     display: none;
   }
@@ -486,6 +498,12 @@ input {
 }
 
 @media only screen and (min-width: 700px) {
+  body {
+    background: none;
+    background: url('images/Header-llustration-desktop.svg') no-repeat;
+    background-size: contain;
+  }
+
   #home-paragraph {
     width: 53.65%;
   }
@@ -559,12 +577,24 @@ input {
     background-size: contain;
   }
 
+  .header-2-container{
+    margin: 8em 0 1em;
+  }
+
   .cards {
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 1em;
+    grid-column-gap: 0.3em;
   }
 
   .sample-containers {
     min-width: 20em;
+  }
+
+  .all-skills {
+    display: grid;
+    grid-column-gap: 2.5em;
+  }
+  footer .mail-container{
+    margin: 1em 0 2em;
   }
 }
