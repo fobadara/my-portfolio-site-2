@@ -1,18 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;600;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;600;800&display=swap");
 
 /* General */
 body {
   all: unset;
-  background:
-    url('images/header-illsutration-mobile.svg') no-repeat center 1%,
-    url('images/frame.svg') no-repeat right 99%;
+  background: url("images/header-illsutration-mobile.svg") no-repeat center 1%,
+    url("images/frame.svg") no-repeat right 99%;
   background-size: contain, 10%;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   width: 100%;
 }
 
 * {
-  /* border: solid magenta; */
   box-sizing: border-box;
 }
 
@@ -113,7 +111,7 @@ button:active {
 /* all header color */
 .header {
   color: #344563;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 #hey {
@@ -142,7 +140,7 @@ button:active {
 .action-container {
   width: 90vw;
   height: 3em;
-  background: url('images/action.svg');
+  background: url("images/action.svg");
   background-size: 20rem;
   background-repeat: no-repeat;
   background-position: center;
@@ -171,7 +169,7 @@ button:active {
 }
 
 .indicator {
-  background: url('images/indicator.svg');
+  background: url("images/indicator.svg");
   background-repeat: no-repeat;
   justify-self: center;
   width: 19%;
@@ -215,7 +213,7 @@ button:active {
   height: 2em;
   margin-bottom: 1em;
   color: #344563;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 /* Using flexbox on items within card */
@@ -252,19 +250,18 @@ button:active {
   grid-template-columns: auto;
   justify-items: center;
   text-align: center;
-  background: url('images/illustration-about-me-mobile.svg');
+  background: url("images/illustration-about-me-mobile.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .header-container-about {
-  /* border: solid firebrick; */
   display: flex;
   justify-content: center;
   text-align: center;
   min-width: 99vw;
   min-height: 30%;
-  background: url('images/mask-group.svg');
+  background: url("images/mask-group.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
@@ -425,7 +422,7 @@ input {
 }
 
 @media only screen and (min-width: 600px) {
-  #home-paragraph{
+  #home-paragraph {
     line-height: 1.6em;
   }
 
@@ -500,7 +497,7 @@ input {
 @media only screen and (min-width: 700px) {
   body {
     background: none;
-    background: url('images/Header-llustration-desktop.svg') no-repeat;
+    background: url("images/Header-llustration-desktop.svg") no-repeat;
     background-size: contain;
   }
 
@@ -509,7 +506,9 @@ input {
   }
 
   .aside-container {
-    background: url('images/illustration-about-me-2-desktop.svg') no-repeat, url('images/illustration-about-me-desktop.svg') no-repeat;
+    background: url("images/illustration-about-me-2-desktop.svg") no-repeat,
+      url("images/illustration-about-me-desktop.svg") no-repeat;
+    background-size: 20%, 80%;
     background-position: left bottom, right;
   }
 
@@ -519,9 +518,9 @@ input {
   }
 
   #frame-wrk-list {
-   min-width: 70%;
+    min-width: 70%;
   }
-   
+
   .about-paragraph {
     width: 53.65%;
   }
@@ -566,22 +565,21 @@ input {
   }
 
   .skillset {
-    background:
-      url('images/box.svg') no-repeat,
-      url('images/illustration-2-contact-form-desktop.svg ') no-repeat,
-      url('images/contact-form-illustratoin-3-desktop.svg') no-repeat;
+    background: url("images/box.svg") no-repeat,
+      url("images/illustration-2-contact-form-desktop.svg ") no-repeat,
+      url("images/contact-form-illustratoin-3-desktop.svg") no-repeat;
     background-position: bottom left, 20% 100%, right 100%;
   }
 }
 
 @media only screen and (min-width: 992px) {
   body {
-    background: url('images/Header-llustration-desktop.svg');
+    background: url("images/Header-llustration-desktop.svg");
     background-repeat: no-repeat;
     background-size: contain;
   }
 
-  .header-2-container{
+  .header-2-container {
     margin: 8em 0 1em;
   }
 
@@ -594,11 +592,15 @@ input {
     min-width: 20em;
   }
 
+  .aside-container {
+    background-size: auto;
+  }
+
   .all-skills {
     display: grid;
     grid-column-gap: 2.5em;
   }
-  footer .mail-container{
+  footer .mail-container {
     margin: 1em 0 2em;
   }
 }
