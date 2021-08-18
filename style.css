@@ -3,11 +3,13 @@
 /* General */
 body {
   all: unset;
-  background: url("images/header-illsutration-mobile.svg") no-repeat center 1%,
+  background:
+    url("images/header-illsutration-mobile.svg") no-repeat center 1%,
     url("images/frame.svg") no-repeat right 99%;
   background-size: contain, 10%;
   font-family: "Inter", sans-serif;
   width: 100%;
+  overflow-x: hidden;
 }
 
 * {
@@ -52,7 +54,7 @@ button {
 
 button:hover {
   background-color: #36b37f;
-  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 button:active {
@@ -158,7 +160,6 @@ button:active {
 
 .header-2-container {
   font-size: 1.5em;
-  margin-bottom: -0.5em;
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
@@ -462,9 +463,6 @@ input {
     justify-items: center;
   }
 
-  .header-2-container {
-    margin-bottom: 1em;
-  }
   .indicator {
     display: none;
   }
@@ -501,12 +499,18 @@ input {
     background-size: contain;
   }
 
+  .header-1-container {
+    width: 50%;
+    margin-bottom: 2em;
+  }
+
   #home-paragraph {
     width: 53.65%;
   }
 
   .aside-container {
-    background: url("images/illustration-about-me-2-desktop.svg") no-repeat,
+    background:
+      url("images/illustration-about-me-2-desktop.svg") no-repeat,
       url("images/illustration-about-me-desktop.svg") no-repeat;
     background-size: 20%, 80%;
     background-position: left bottom, right;
@@ -565,7 +569,8 @@ input {
   }
 
   .skillset {
-    background: url("images/box.svg") no-repeat,
+    background:
+      url("images/box.svg") no-repeat,
       url("images/illustration-2-contact-form-desktop.svg ") no-repeat,
       url("images/contact-form-illustratoin-3-desktop.svg") no-repeat;
     background-position: bottom left, 20% 100%, right 100%;
@@ -579,8 +584,9 @@ input {
     background-size: contain;
   }
 
-  .header-2-container {
-    margin: 8em 0 1em;
+  .header-1-container {
+    width: 80%;
+    margin-bottom: -2em;
   }
 
   .cards {
@@ -600,6 +606,7 @@ input {
     display: grid;
     grid-column-gap: 2.5em;
   }
+
   footer .mail-container {
     margin: 1em 0 2em;
   }
