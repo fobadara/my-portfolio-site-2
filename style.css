@@ -203,6 +203,11 @@ button:active {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+  transition: all 0.4s ease;
+}
+
+.sample-containers:hover {
+  transform: scale(1.05);  
 }
 
 .sample-containers * {
@@ -396,6 +401,7 @@ footer .btn {
 
 input {
   padding: 0.7em;
+  /* transition: transform 1s; */
 }
 
 input:hover,
