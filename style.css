@@ -3,8 +3,7 @@
 /* General */
 body {
   all: unset;
-  background:
-    url("images/header-illsutration-mobile.svg") no-repeat center 1%,
+  background: url("images/header-illsutration-mobile.svg") no-repeat center 1%,
     url("images/frame.svg") no-repeat right 99%;
   background-size: contain, 10%;
   font-family: "Inter", sans-serif;
@@ -23,6 +22,11 @@ li {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
+}
+
+a {
+  color: #42526e;
+  text-decoration: none;
 }
 
 .main-container {
@@ -207,7 +211,7 @@ button:active {
 }
 
 .sample-containers:hover {
-  transform: scale(1.05);  
+  transform: scale(1.05);
 }
 
 .sample-containers * {
@@ -401,6 +405,7 @@ footer .btn {
 
 input {
   padding: 0.7em;
+
   /* transition: transform 1s; */
 }
 
@@ -534,8 +539,7 @@ textarea:valid {
   }
 
   .aside-container {
-    background:
-      url("images/illustration-about-me-2-desktop.svg") no-repeat,
+    background: url("images/illustration-about-me-2-desktop.svg") no-repeat,
       url("images/illustration-about-me-desktop.svg") no-repeat;
     background-size: 20%, 80%;
     background-position: left bottom, right;
@@ -585,8 +589,7 @@ textarea:valid {
   }
 
   .skillset {
-    background:
-      url("images/box.svg") no-repeat,
+    background: url("images/box.svg") no-repeat,
       url("images/illustration-2-contact-form-desktop.svg ") no-repeat,
       url("images/contact-form-illustratoin-3-desktop.svg") no-repeat;
     background-position: bottom left, 20% 100%, right 100%;
