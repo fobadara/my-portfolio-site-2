@@ -11,9 +11,9 @@
         <nav class="container navigation">
             <div class="welcome">Welcome</div>
             <ul class="nav-list-cont">
-                <li>Portfolio</li>
-                <li>About</li>
-                <li>Contact</li>
+                <li class="trans"><a href="#portfolio">Portfolio</a></li>
+                <li class="trans"><a href="#about">About</a></li>
+                <li class="trans"><a href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger"><img src="images/ham.svg" alt=""></div>
         </nav>
@@ -27,18 +27,18 @@
             </p>
             <address class="container">
                 <ul class="navigation nav-container">
-                    <li class="nav-link-container"><a href="github.com/fobadara" class="nav-link" id="github"><img src="images/github.svg" alt="An image showing Github's logo"></a></li>
-                    <li class="nav-link-container"><a href="#" class="nav-link"><img src="images/linkedin-icon.svg" alt="An image showing Linkedin's logo"></a></li>
-                    <li class="nav-link-container"><a href="#" class="nav-link"><img src="images/angellist.svg" alt="An image showing angelist's logo"></a></li>
-                    <li class="nav-link-container"><a href="#" class="nav-link"><img src="images/twitter.svg" alt="An image showing twitter's logo"></a></li>
-                    <li class="nav-link-container"><a href="#" class="nav-link"><img src="images/medium.svg" alt="An image showing medium's logo"></a></li>
+                    <li class="nav-link-container trans"><a href="https://github.com/fobadara" class="nav-link" id="github"><img src="images/github.svg" alt="An image showing Github's logo"></a></li>
+                    <li class="nav-link-container trans"><a href="#" class="nav-link"><img src="images/linkedin-icon.svg" alt="An image showing Linkedin's logo"></a></li>
+                    <li class="nav-link-container trans"><a href="#" class="nav-link"><img src="images/angellist.svg" alt="An image showing angelist's logo"></a></li>
+                    <li class="nav-link-container trans"><a href="fob90s@twitter.com" class="nav-link"><img src="images/twitter.svg" alt="An image showing twitter's logo"></a></li>
+                    <li class="nav-link-container trans"><a href="#" class="nav-link"><img src="images/medium.svg" alt="An image showing medium's logo"></a></li>
                 </ul>
             </address>
             <div class="action-container">
                 <img src="#" alt="">
             </div>
         </header>
-        <main class="main-sec">
+        <main class="main-sec" id="portfolio">
             <section class="sample-jobs">                   
                 <div class="header-2-container">
                     <h2 class="header header-2">My Recent Works</h2>
@@ -152,7 +152,7 @@
                 </article>
             </section>    
         </main>
-        <aside class="aside-container">
+        <aside class="aside-container" id="about">
             <section class="aside-flex">    
                 <div class="header-container-about">
                     <h2 class="header header-2" id="about-head">About me</h2>
@@ -216,7 +216,7 @@
                     </ul>
                 </div>
             </article>       
-            <article class="container form-sec">
+            <article class="container form-sec" id="contact">
                 <div class="last-head-container header">
                     <h3 class="header-3">
                         I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
@@ -224,7 +224,7 @@
                 </div>
                 <form action="https://formspree.io/f/xrgraoke" method="post" class="form">
                     <input name="name" type="text" class="entry" placeholder="Full Name" maxlength="30" required><br>
-                    <input name="email" type="email" class="entry" placeholder="Please input your email" required><br>
+                    <input name="email" type="email" class="entry" id="email" placeholder="Please input your email" required><br>
                     <textarea name="comment" id="comment" maxlength="500" cols="30" rows="10" class="entry" placeholder="Type in something" required></textarea><br>    
                     <button type="submit" class="btn" id="get-in-touch">Get in touch</button>
                 </form>
@@ -233,14 +233,14 @@
         <footer class="footer">
             <address class="container">
                 <ul class="container nav-container">
-                    <li class="nav-link-container"><a href="github.com/fobadara" class="nav-link"><img src="images/github.svg" alt="An image showing Github's logo"></a></li>
-                    <li class="nav-link-container"><a href="#" class="nav-link"><img src="images/linkedin-icon.svg" alt="An image showing Linkedin's logo"></a></li>
-                    <li class="nav-link-container"><a href="#" class="nav-link"><img src="images/angellist.svg" alt="An image showing angelist's logo"></a></li>
-                    <li class="nav-link-container"><a href="#" class="nav-link"><img src="images/twitter.svg" alt="An image showing twitter's logo"></a></li>
-                    <li class="nav-link-container"><a href="#" class="nav-link"><img src="images/medium.svg" alt="An image showing medium's logo"></a></li>
+                    <li class="nav-link-container trans"><a href="github.com/fobadara" class="nav-link"><img src="images/github.svg" alt="An image showing Github's logo"></a></li>
+                    <li class="nav-link-container trans"><a href="#" class="nav-link"><img src="images/linkedin-icon.svg" alt="An image showing Linkedin's logo"></a></li>
+                    <li class="nav-link-container trans"><a href="#" class="nav-link"><img src="images/angellist.svg" alt="An image showing angelist's logo"></a></li>
+                    <li class="nav-link-container trans"><a href="fob90s@twitter.com" class="nav-link"><img src="images/twitter.svg" alt="An image showing twitter's logo"></a></li>
+                    <li class="nav-link-container trans"><a href="#" class="nav-link"><img src="images/medium.svg" alt="An image showing medium's logo"></a></li>
                 </ul>
                 <span class="mail-container">
-                    <a href="mailto:fob90s@gmail.com?subject=Contact%20Fobadara" class="mail">fob90s@gmail.com</a>
+                    <a href="mailto:fob90s@gmail.com?subject=Contact%20Fobadara" class="mail trans">fob90s@gmail.com</a>
                 </span>
             </address>
         </footer>
