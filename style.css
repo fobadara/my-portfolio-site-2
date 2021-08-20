@@ -48,6 +48,15 @@ li {
   cursor: pointer;
 }
 
+.scale {
+  transition: all .3s ease-in-out;
+}
+
+.scale:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
 button {
   color: #fff;
   background-color: #36b37f;
