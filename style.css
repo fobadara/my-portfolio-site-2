@@ -155,6 +155,10 @@ button:active {
   justify-content: space-around;
 }
 
+.fab {
+  font-size: 1.5em;
+}
+
 .nav-container > * {
   margin-right: 1em;
 }
@@ -166,7 +170,7 @@ button:active {
   background-size: 20rem;
   background-repeat: no-repeat;
   background-position: center;
-  margin: 50px 20px;
+  margin: 50px 10px 50px 30px;
 }
 
 /* main-content positioned with grid system */
@@ -454,12 +458,13 @@ textarea:valid {
 
 .mail-container {
   display: flex;
-  margin: 1em 0 2em;
+  margin: 0.5em 0 2em 0;
 }
 
 .mail {
   color: #42526e;
   text-decoration: none;
+  margin-left: 2.5em;
 }
 
 @media only screen and (min-width: 600px) {
