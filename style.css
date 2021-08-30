@@ -94,6 +94,33 @@ button:active {
   display: none;
 }
 
+.hamburger-toggle {
+  display: block;
+  position: fixed;
+  bottom: -1.5em;
+  right: -0.01em; 
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+}
+
+.close-modal {
+  display: flex;
+  width: 80%;
+  justify-content: flex-end;
+}
+
+.close-modal * {
+  color: #67798e;
+  width: 12px;
+  height: 12px;
+}
+
+.hamburger-toggle li {
+  padding-top: 1.5em;
+}
+
 .welcome {
   font-weight: bold;
   font-size: 20px;
@@ -485,6 +512,10 @@ textarea:valid {
 
   .nav-list-cont {
     display: flex;
+  }
+
+  .close-modal {
+    display: none;
   }
 
   .nav-list-cont li {
