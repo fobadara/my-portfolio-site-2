@@ -14,4 +14,8 @@ function closeMenu() {
     menu.classList.remove("hamburger-toggle");
 }
 
+const navList = document.querySelectorAll('.nav-list');
+for (let i = 0; i < navList.length; i++) {
+    navList[i].addEventListener('click', closeMenu);
+} 
 
