@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
@@ -12,9 +12,10 @@
         <nav class="container navigation">
             <div class="welcome">Welcome</div>
             <ul class="nav-list-cont">
-                <li class="trans"><a href="#portfolio">Portfolio</a></li>
-                <li class="trans"><a href="#about">About</a></li>
-                <li class="trans"><a href="#contact">Contact</a></li>
+                <li class="close-modal"><i class="fas fa-times"></i></li>
+                <li class="trans nav-list" id="portfolio-head"><a href="#portfolio">Portfolio</a></li>
+                <li class="trans nav-list"><a href="#about">About</a></li>
+                <li class="trans nav-list"><a href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger"><img src="images/ham.svg" alt=""></div>
         </nav>
@@ -27,7 +28,7 @@
                 don’t hestiate to contact me.
             </p>
             <address class="container">
-                <ul class="navigation nav-container">
+                <ul class="nav-container">
                     <li class="nav-link-container scale"><a href="https://github.com/fobadara" class="nav-link"><img src="images/github.svg" alt="An image showing Github's logo"></a></li>
                     <li class="nav-link-container scale"><a href="#" class="nav-link"><i class="fab fa-linkedin-in"></i></a></li>
                     <li class="nav-link-container scale"><a href="#" class="nav-link"><i class="fab fa-angellist"></i></a></li>
@@ -38,8 +39,9 @@
             <div class="action-container">
                 <img src="#" alt="">
             </div>
+            <a href="" id="portfolio"></a>
         </header>
-        <main class="main-sec" id="portfolio">
+        <main class="main-sec">
             <section class="sample-jobs">                   
                 <div class="header-2-container">
                     <h2 class="header header-2">My Recent Works</h2>
@@ -233,7 +235,7 @@
         </div>    
         <footer class="footer">
             <address class="container">
-                <ul class="navigation nav-container">
+                <ul class="nav-container">
                     <li class="nav-link-container scale"><a href="https://github.com/fobadara" class="nav-link"><img src="images/github.svg" alt="An image showing Github's logo"></a></li>
                     <li class="nav-link-container scale"><a href="#" class="nav-link"><i class="fab fa-linkedin-in"></i></a></li>
                     <li class="nav-link-container scale"><a href="#" class="nav-link"><i class="fab fa-angellist"></i></a></li>
@@ -245,5 +247,6 @@
                 </span>
             </address>
         </footer>
+        <script src="javascript/index.js"></script>
     </body>
 </html>
