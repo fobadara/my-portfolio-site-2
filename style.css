@@ -265,6 +265,16 @@ button:active {
   transition: all 0.4s ease;
 }
 
+/* Hides project window  */
+.project {
+  display: none;
+}
+
+.window {
+  display: flex;
+  
+}
+
 .sample-containers:hover {
   transform: scale(1.05);
 }
