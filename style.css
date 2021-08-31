@@ -85,13 +85,21 @@ button:active {
 .navigation {
   display: flex;
   flex-direction: row;
+  width: 100%;
+  padding: 1em;
+  padding-bottom: 0.2em;
   justify-content: space-between;
-  margin: 1.1em;
+  position: fixed;
   flex: 1 1 auto;
+  background-color: #fff;
 }
 
 .nav-list-cont {
   display: none;
+}
+
+.back {
+  background-color: red;
 }
 
 .hamburger-toggle {
@@ -105,9 +113,15 @@ button:active {
   box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
 }
 
+.hamburger-toggle li {
+  padding-top: 1.5em;
+  width: 80%;
+}
+
 .close-modal {
   display: flex;
-  width: 80%;
+  width: 100%;
+  margin-left: 3em;
   justify-content: flex-end;
 }
 
@@ -115,10 +129,6 @@ button:active {
   color: #67798e;
   width: 12px;
   height: 12px;
-}
-
-.hamburger-toggle li {
-  padding-top: 1.5em;
 }
 
 .welcome {
@@ -187,7 +197,7 @@ button:active {
 }
 
 .nav-container > * {
-  margin-right: 1em;
+  margin: 1em;
 }
 
 .action-container {
@@ -201,6 +211,10 @@ button:active {
 }
 
 /* main-content positioned with grid system */
+.main-sec {
+  margin-top: 7em;
+}
+
 .sample-jobs {
   display: grid;
   margin: 0 auto;
@@ -501,8 +515,10 @@ textarea:valid {
 
   .navigation {
     justify-content: center;
-    margin: 2.8em 0 3em;
-    font-size: small;
+    position: unset;
+    background: none;
+    margin: 2.8em 0 -5em;
+    font-size: medium;
     font-weight: 600;
   }
 
@@ -522,16 +538,8 @@ textarea:valid {
     margin-right: 2em;
   }
 
-  .top-header {
-    margin-top: 5em;
-  }
-
   .paragraph {
     width: 80%;
-  }
-
-  .main-sec {
-    margin-top: 10em;
   }
 
   .sample-jobs {
