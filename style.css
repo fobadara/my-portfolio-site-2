@@ -267,12 +267,36 @@ button:active {
 
 /* Hides project window  */
 .project {
-  display: none;
+  /* display: none; */
 }
 
 .window {
   display: flex;
-  
+  position: absolute;
+  z-index: 2;
+  left: 5%;
+  top: 8%;
+  width: max-content;
+  height: 836px;
+}
+
+* {
+  outline: solid 1px red;
+}
+
+
+.window-btn img{
+  width: 13px;
+  margin-left: 1em;
+}
+.shadow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(36, 36, 37, 0.8);
 }
 
 .sample-containers:hover {
@@ -288,6 +312,18 @@ button:active {
   min-height: 50%;
   background-color: #e5e5e5;
   border-radius: 4px 4px 0 0;
+}
+
+.window .sample-img-container {
+  width: 20em;
+  min-height: 15em;
+  margin: 0.8em;
+  padding: 1em;
+  border-radius: 4px;
+  text-align: end;
+  font-size: medium;
+  
+  color: #fff;
 }
 
 .sample-img-txt-head-container {

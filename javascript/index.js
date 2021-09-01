@@ -112,7 +112,7 @@ function populateMain() {
                 <article class="cards">
                 <div class="sample-containers">
                     <div class="sample-img-container">
-                        <img src="${details[0].imgSrc}" alt="" class="sample-img" id="sample-img-1">
+                        <img src=${details[0].imgSrc} alt="" class="sample-img" id="sample-img-1">
                     </div>
                     <div class="sample-img-txt-head-container">
                         <h3 class="sample-img-head-txt">${details[0].projectName}</h3>
@@ -124,12 +124,12 @@ function populateMain() {
                         <li class="html">${details[0].tech1}</li>
                     </ul>
                     <div class="btn-container">
-                        <button type="button" class="btn" data-card= 'card1'>See Project</button>
+                        <button type="button" class="btn" data-card='card0' 'card1'>See Project</button>
                     </div>
                 </div>
                 <div class="sample-containers">
                 <div class="sample-img-container">
-                    <img src="${details[1].imgSrc}" alt="" class="sample-img" id="sample-img-1">
+                    <img src=${details[1].imgSrc} alt="" class="sample-img" id="sample-img-1">
                 </div>
                 <div class="sample-img-txt-head-container">
                     <h3 class="sample-img-head-txt">${details[1].projectName}</h3>
@@ -141,12 +141,12 @@ function populateMain() {
                     <li class="html">${details[1].tech1}</li>
                 </ul>
                 <div class="btn-container">
-                    <button type="button" class="btn" data-card = 'card2'>See Project</button>
+                    <button type="button" class="btn" data-card = 'card1'>See Project</button>
                 </div>
             </div>
             <div class="sample-containers">
             <div class="sample-img-container">
-                <img src="${details[2].imgSrc}" alt="" class="sample-img" id="sample-img-1">
+                <img src=${details[2].imgSrc} alt="" class="sample-img" id="sample-img-1">
             </div>
             <div class="sample-img-txt-head-container">
                 <h3 class="sample-img-head-txt">${details[2].projectName}</h3>
@@ -158,12 +158,12 @@ function populateMain() {
                 <li class="html">${details[2].tech1}</li>
             </ul>
             <div class="btn-container">
-                <button type="button" class="btn" data-card = 'card3'>See Project</button>
+                <button type="button" class="btn" data-card = 'card2'>See Project</button>
             </div>
         </div>
         <div class="sample-containers">
             <div class="sample-img-container">
-                <img src="${details[3].imgSrc}" alt="" class="sample-img" id="sample-img-1">
+                <img src=${details[3].imgSrc} alt="" class="sample-img" id="sample-img-1">
             </div>
             <div class="sample-img-txt-head-container">
                 <h3 class="sample-img-head-txt">${details[3].projectName}</h3>
@@ -175,12 +175,12 @@ function populateMain() {
                 <li class="html">${details[3].tech1}</li>
             </ul>
             <div class="btn-container">
-                <button type="button" class="btn" data-card= 'card4'>See Project</button>
+                <button type="button" class="btn" data-card= 'card3'>See Project</button>
             </div>
         </div>   
         <div class="sample-containers">
             <div class="sample-img-container">
-                <img src="${details[4].imgSrc}" alt="" class="sample-img" id="sample-img-1">
+                <img src=${details[4].imgSrc} alt="" class="sample-img" id="sample-img-1">
             </div>
             <div class="sample-img-txt-head-container">
                 <h3 class="sample-img-head-txt">${details[4].projectName}</h3>
@@ -192,12 +192,12 @@ function populateMain() {
                 <li class="html">${details[4].tech1}</li>
             </ul>
             <div class="btn-container">
-                <button type="button" class="btn" data-card= 'card5'>See Project</button>
+                <button type="button" class="btn" data-card= 'card4'>See Project</button>
             </div>
         </div>
         <div class="sample-containers">
             <div class="sample-img-container">
-                <img src="${details[5].imgSrc}" alt="" class="sample-img" id="sample-img-1">
+                <img src=${details[5].imgSrc} alt="" class="sample-img" id="sample-img-1">
             </div>
             <div class="sample-img-txt-head-container">
                 <h3 class="sample-img-head-txt">${details[5].projectName}</h3>
@@ -226,21 +226,39 @@ function getButton() {
 getButton();
 
 function openProjectDetails(event) {
+    let dataSet = event.target.dataset.card;
+    let num = 0;
+    if (dataSet === 'card0') {
+        num = 0;
+    }else if (dataSet === 'card1') {
+        num = 1;
+    }else if (dataSet === 'card2') {
+        num = 2;
+    }else if (dataSet === 'card3') {
+        num = 3;
+    }else if (dataSet === 'card4') {
+        num = 4;
+    }else if (dataSet === 'card5') {
+        num = 5;
+    }
+
     variables.project.classList.add('window');
     variables.project.innerHTML = `
     <div class="sample-img-container">
-        <img src="${details[5].imgSrc}" alt="" class="sample-img" id="sample-img-1">x
+        <img src=${details[num].imgSrc} alt="" class="sample-img" id="sample-img-1">x
     </div>
     <div class="sample-img-txt-head-container">
-        <h3 class="sample-img-head-txt">${details[5].projectName}</h3>
+        <h3 class="sample-img-head-txt">${details[num].projectName}</h3>
     </div>
     <ul class="code-lang-container">
-        <li class="ruby-on-rails">${details[5].tech4}</li>
-        <li class="css">${details[5].tech3}</li>
-        <li class="js">${details[5].tech2}</li>
-        <li class="html">${details[5].tech1}</li>
+        <li class="ruby-on-rails">${details[num].tech4}</li>
+        <li class="css">${details[num].tech3}</li>
+        <li class="js">${details[num].tech2}</li>
+        <li class="html">${details[num].tech1}</li>
     </ul>
+    <p>${details[num].description}</p>
     <div class="btn-container">
-        <button type="button" class="btn" data-card='project'>See Project</button>
+        <button type="button" class="btn window-btn" data-card='project'>See Live <img src='images/see-live.svg' alt='Expand icon'></button>
+        <button type="button" class="btn window-btn" data-card='project'>Source <img src='images/white-github.png' alt='Github's icon'></button>
     </div>`;
 }
