@@ -243,6 +243,7 @@ function openProjectDetails(event) {
     }
 
     variables.project.classList.add('window');
+    variables.project.classList.remove('sample-containers');
     variables.project.innerHTML = `
     <div class="sample-img-container">
         <img src=${details[num].imgSrc} alt="" class="sample-img" id="sample-img-1">x
@@ -251,10 +252,10 @@ function openProjectDetails(event) {
         <h3 class="sample-img-head-txt">${details[num].projectName}</h3>
     </div>
     <ul class="code-lang-container">
-        <li class="ruby-on-rails">${details[num].tech4}</li>
+        <li id="popuprails" class="ruby-on-rails">${details[num].tech4}</li>
         <li class="css">${details[num].tech3}</li>
         <li class="js">${details[num].tech2}</li>
-        <li class="html">${details[num].tech1}</li>
+        
     </ul>
     <p>${details[num].description}</p>
     <div class="btn-container">

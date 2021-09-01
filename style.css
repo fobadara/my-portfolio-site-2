@@ -272,11 +272,13 @@ button:active {
 
 .window {
   display: flex;
+  flex-direction: column;
   position: absolute;
   z-index: 2;
   left: 5%;
   top: 8%;
-  width: max-content;
+  /*width: max-content;*/
+  background-color: #fff;
   height: 836px;
 }
 
@@ -314,8 +316,24 @@ button:active {
   border-radius: 4px 4px 0 0;
 }
 
+#popuprails{
+  margin-right: 100px;
+}
+
+.window .code-lang-container{
+  margin-top: 58px;
+}
+
+.window .code-lang-container .css,
+.window .code-lang-container .js
+{
+
+  margin-left: 10px;
+
+}
+
 .window .sample-img-container {
-  width: 20em;
+  width: 15em;
   min-height: 15em;
   margin: 0.8em;
   padding: 1em;
