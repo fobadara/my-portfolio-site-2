@@ -36,124 +36,20 @@
                     <li class="nav-link-container scale"><a href="#" class="nav-link"><i class="fab fa-medium-m"></i></a></li>
                 </ul>
             </address>
-            <div class="action-container">
+            <div class="action-container" id="portfolio">
                 <img src="#" alt="">
             </div>
-            <a href="" id="portfolio"></a>
         </header>
         <main class="main-sec">
-            <section class="sample-jobs">                   
-                <div class="header-2-container">
-                    <h2 class="header header-2">My Recent Works</h2>
-                </div>
-                <div class="indicator">
-                    <img src="#" alt="" id="indicator">
-                </div>
-                <article class="cards">
-                    <div class="sample-containers">
-                        <div class="sample-img-container">
-                            <img src="#" alt="" class="sample-img" id="sample-img-1">
-                        </div>
-                        <div class="sample-img-txt-head-container">
-                            <h3 class="sample-img-head-txt">Multi-Post Stories Gain+Glory</h3>
-                        </div>
-                        <ul class="code-lang-container">
-                            <li class="ruby-on-rails">Ruby on rails</li>
-                            <li class="css">css</li>
-                            <li class="js">Javascript</li>
-                            <li class="html">html</li>
-                        </ul>
-                        <div class="btn-container">
-                            <button type="button" class="btn">See Project</button>
-                        </div>
-                    </div>
-                    <div class="sample-containers">
-                        <div class="sample-img-container">
-                            <img src="#" alt="" class="sample-img" id="sample-img-2">
-                        </div>
-                        <div class="sample-img-txt-head-container">
-                            <h3 class="sample-img-head-txt" id="sample-img-2-head-txt">Multi-Post Stories Gain+Glory</h3>
-                        </div>
-                        <ul class="code-lang-container">
-                            <li class="ruby-on-rails">Ruby on rails</li>
-                            <li class="css">css</li>
-                            <li class="js">Javascript</li>
-                            <li class="html">html</li>
-                        </ul>
-                        <div class="btn-container">
-                            <button type="button" class="btn">See Project</button>
-                        </div>
-                    </div>
-                    <div class="sample-containers">
-                        <div class="sample-img-container" id="sample-3-img-container">
-                            <img src="#" alt="" class="sample-img" id="sample-img-3">
-                        </div>
-                        <div class="sample-img-txt-head-container">
-                            <h3 class="sample-img-head-txt" id="sample-img-3-head-txt">Multi-Post Stories Gain+Glory</h3>
-                        </div>
-                        <ul class="code-lang-container">
-                            <li class="ruby-on-rails">Ruby on rails</li>
-                            <li class="css">css</li>
-                            <li class="js">Javascript</li>
-                            <li class="html">html</li>
-                        </ul>
-                        <div class="btn-container">
-                            <button type="button" class="btn">See Project</button>
-                        </div>
-                    </div>
-                    <div class="sample-containers">
-                        <div class="sample-img-container">
-                            <img src="#" alt="" class="sample-img" id="sample-img-4">
-                        </div>
-                        <div class="sample-img-txt-head-container">
-                            <h3 class="sample-img-head-txt" id="sample-img4-head-txt">Multi-Post Stories Gain+Glory</h3>
-                        </div>
-                        <ul class="code-lang-container">
-                            <li class="ruby-on-rails">Ruby on rails</li>
-                            <li class="css">css</li>
-                            <li class="js">Javascript</li>
-                            <li class="html">html</li>
-                        </ul>
-                        <div class="btn-container">
-                            <button type="button" class="btn">See Project</button>
-                        </div>
-                    </div>
-                    <div class="container sample-containers">
-                        <div class="sample-img-container" id="sample-5-img-container">
-                            <img src="#" alt="" class="sample-img" id="sample-img-5">
-                        </div>
-                        <div class="sample-img-txt-head-container">
-                            <h3 class="sample-img-head-txt" id="sample-img-5-head-txt">Multi-Post Stories Gain+Glory</h3>
-                        </div>
-                        <ul class="code-lang-container">
-                            <li class="ruby-on-rails">Ruby on rails</li>
-                            <li class="css">css</li>
-                            <li class="js">Javascript</li>
-                            <li class="html">html</li>
-                        </ul>
-                        <div class="btn-container">
-                            <button type="button" class="btn">See Project</button>
-                        </div>
-                    </div>
-                    <div class="sample-containers">
-                        <div class="sample-img-container" id="sample-6-img-container">
-                            <img src="#" alt="" class="sample-img" id="sample-img-6">
-                        </div>
-                        <div class="sample-img-txt-head-container">
-                            <h3 class="sample-img-head-txt" id="sample-img-6-head-txt">Multi-Post Stories Gain+Glory</h3>
-                        </div>
-                        <ul class="code-lang-container">
-                            <li class="ruby-on-rails">Ruby on rails</li>
-                            <li class="css">css</li>
-                            <li class="js">Javascript</li>
-                            <li class="html">html</li>
-                        </ul>
-                        <div class="btn-container">
-                            <button type="button" class="btn">See Project</button>
-                        </div>
-                    </div>
-                </article>
-            </section>    
+        <div class="shadow-div"></div>
+        <!-- Project details popup skeleton -->
+        <div class="sample-containers project">
+        <!-- Content populated by javascript -->
+        </div>    
+         <!-- End of project details popup skeleton -->
+        <div class="sample-jobs">                   
+            <!-- Content populated by Javascript -->
+        </div>    
         </main>
         <aside class="aside-container" id="about">
             <section class="aside-flex">    
@@ -229,7 +125,7 @@
                     <input name="name" type="text" class="entry" placeholder="Full Name" maxlength="30" required><br>
                     <input name="email" type="email" class="entry" id="email" placeholder="Please input your email" required><br>
                     <textarea name="comment" id="comment" maxlength="500" cols="30" rows="10" class="entry" placeholder="Type in something" required></textarea><br>    
-                    <button type="submit" class="btn" id="get-in-touch">Get in touch</button>
+                    <button type="submit" class="btn" id="get-in-touch">Get in touch</button><span id="message"></span>
                 </form>
             </article>
         </div>    
