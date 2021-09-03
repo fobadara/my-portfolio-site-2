@@ -9,6 +9,9 @@ const variables = {
   project: document.querySelector('.project'),
   buttons: document.querySelectorAll('button'),
   shadow: document.querySelector('.shadow-div'),
+  input: document.querySelector('input'),
+  fullName: document.querySelector('#name'),
+  email: document.querySelector('#email'),
 };
 
 // Beginning of navigation pop-up
@@ -104,116 +107,117 @@ const details = [
 ];
 
 const populateMain = () => {
-  variables.sampleJobs.innerHTML = ` <div class="header-2-container">
-                <h2 class="header header-2">My Recent Works</h2>
-                </div>
-                <div class="indicator">
-                <img src="#" alt="" id="indicator">
-                </div>
-                <article class="cards">
-                <div class="sample-containers">
-                    <div class="sample-img-container">
-                        <img src=${details[0].imgSrc} alt="" class="sample-img" id="sample-img-1">
-                    </div>
-                    <div class="sample-img-txt-head-container">
-                        <h3 class="sample-img-head-txt">${details[0].projectName}</h3>
-                    </div>
-                    <ul class="code-lang-container">
-                        <li class="ruby-on-rails">${details[0].tech4}</li>
-                        <li class="css">${details[0].tech3}</li>
-                        <li class="js">${details[0].tech2}</li>
-                        <li class="html">${details[0].tech1}</li>
-                    </ul>
-                    <div class="btn-container">
-                    <button type="button" class="btn" data-card='card0' 'card1'>See Project</button>
-                    </div>
-                </div>
-                <div class="sample-containers">
-                <div class="sample-img-container">
-                    <img src=${details[1].imgSrc} alt="" class="sample-img" id="sample-img-1">
-                </div>
-                <div class="sample-img-txt-head-container">
-                    <h3 class="sample-img-head-txt">${details[1].projectName}</h3>
-                </div>
-                <ul class="code-lang-container">
-                    <li class="ruby-on-rails">${details[1].tech4}</li>
-                    <li class="css">${details[1].tech3}</li>
-                    <li class="js">${details[1].tech2}</li>
-                    <li class="html">${details[1].tech1}</li>
-                </ul>
-                <div class="btn-container">
-                    <button type="button" class="btn" data-card = 'card1'>See Project</button>
-                </div>
-            </div>
-            <div class="sample-containers">
-            <div class="sample-img-container">
-                <img src=${details[2].imgSrc} alt="" class="sample-img" id="sample-img-1">
-            </div>
-            <div class="sample-img-txt-head-container">
-                <h3 class="sample-img-head-txt">${details[2].projectName}</h3>
-            </div>
-            <ul class="code-lang-container">
-                <li class="ruby-on-rails">${details[0].tech4}</li>
-                <li class="css">${details[2].tech3}</li>
-                <li class="js">${details[2].tech2}</li>
-                <li class="html">${details[2].tech1}</li>
-            </ul>
-            <div class="btn-container">
-                <button type="button" class="btn" data-card = 'card2'>See Project</button>
-            </div>
-        </div>
-        <div class="sample-containers">
-            <div class="sample-img-container">
-                <img src=${details[3].imgSrc} alt="" class="sample-img" id="sample-img-1">
-            </div>
-            <div class="sample-img-txt-head-container">
-                <h3 class="sample-img-head-txt">${details[3].projectName}</h3>
-            </div>
-            <ul class="code-lang-container">
-                <li class="ruby-on-rails">${details[3].tech4}</li>
-                <li class="css">${details[3].tech3}</li>
-                <li class="js">${details[3].tech2}</li>
-                <li class="html">${details[3].tech1}</li>
-            </ul>
-            <div class="btn-container">
-                <button type="button" class="btn" data-card= 'card3'>See Project</button>
-            </div>
-        </div>   
-        <div class="sample-containers">
-            <div class="sample-img-container">
-                <img src=${details[4].imgSrc} alt="" class="sample-img" id="sample-img-1">
-            </div>
-            <div class="sample-img-txt-head-container">
-                <h3 class="sample-img-head-txt">${details[4].projectName}</h3>
-            </div>
-            <ul class="code-lang-container">
-                <li class="ruby-on-rails">${details[4].tech4}</li>
-                <li class="css">${details[4].tech3}</li>
-                <li class="js">${details[4].tech2}</li>
-                <li class="html">${details[4].tech1}</li>
-            </ul>
-            <div class="btn-container">
-              <button type="button" class="btn" data-card= 'card4'>See Project</button>
-            </div>
-        </div>
-        <div class="sample-containers">
-            <div class="sample-img-container">
-                <img src=${details[5].imgSrc} alt="" class="sample-img" id="sample-img-1">
-            </div>
-            <div class="sample-img-txt-head-container">
-                <h3 class="sample-img-head-txt">${details[5].projectName}</h3>
-            </div>
-            <ul class="code-lang-container">
-                <li class="ruby-on-rails">${details[5].tech4}</li>
-                <li class="css">${details[5].tech3}</li>
-                <li class="js">${details[5].tech2}</li>
-                <li class="html">${details[5].tech1}</li>
-            </ul>
-            <div class="btn-container">
-                <button type="button" class="btn" data-card= 'card5'>See Project</button>
-            </div>
-        </div>           
-    </article>`;
+  variables.sampleJobs.innerHTML = ` 
+  <div class="header-2-container">
+    <h2 class="header header-2">My Recent Works</h2>
+  </div>
+                  <div class="indicator">
+                  <img src="#" alt="" id="indicator">
+                  </div>
+                  <article class="cards">
+                  <div class="sample-containers">
+                      <div class="sample-img-container">
+                          <img src=${details[0].imgSrc} alt="" class="sample-img" id="sample-img-1">
+                      </div>
+                      <div class="sample-img-txt-head-container">
+                          <h3 class="sample-img-head-txt">${details[0].projectName}</h3>
+                      </div>
+                      <ul class="code-lang-container">
+                          <li class="ruby-on-rails">${details[0].tech4}</li>
+                          <li class="css">${details[0].tech3}</li>
+                          <li class="js">${details[0].tech2}</li>
+                          <li class="html">${details[0].tech1}</li>
+                      </ul>
+                      <div class="btn-container">
+                      <button type="button" class="btn" data-card='card0' 'card1'>See Project</button>
+                      </div>
+                  </div>
+                  <div class="sample-containers">
+                  <div class="sample-img-container">
+                      <img src=${details[1].imgSrc} alt="" class="sample-img" id="sample-img-1">
+                  </div>
+                  <div class="sample-img-txt-head-container">
+                      <h3 class="sample-img-head-txt">${details[1].projectName}</h3>
+                  </div>
+                  <ul class="code-lang-container">
+                      <li class="ruby-on-rails">${details[1].tech4}</li>
+                      <li class="css">${details[1].tech3}</li>
+                      <li class="js">${details[1].tech2}</li>
+                      <li class="html">${details[1].tech1}</li>
+                  </ul>
+                  <div class="btn-container">
+                      <button type="button" class="btn" data-card = 'card1'>See Project</button>
+                  </div>
+              </div>
+              <div class="sample-containers">
+              <div class="sample-img-container">
+                  <img src=${details[2].imgSrc} alt="" class="sample-img" id="sample-img-1">
+              </div>
+              <div class="sample-img-txt-head-container">
+                  <h3 class="sample-img-head-txt">${details[2].projectName}</h3>
+              </div>
+              <ul class="code-lang-container">
+                  <li class="ruby-on-rails">${details[0].tech4}</li>
+                  <li class="css">${details[2].tech3}</li>
+                  <li class="js">${details[2].tech2}</li>
+                  <li class="html">${details[2].tech1}</li>
+              </ul>
+              <div class="btn-container">
+                  <button type="button" class="btn" data-card = 'card2'>See Project</button>
+              </div>
+          </div>
+          <div class="sample-containers">
+              <div class="sample-img-container">
+                  <img src=${details[3].imgSrc} alt="" class="sample-img" id="sample-img-1">
+              </div>
+              <div class="sample-img-txt-head-container">
+                  <h3 class="sample-img-head-txt">${details[3].projectName}</h3>
+              </div>
+              <ul class="code-lang-container">
+                  <li class="ruby-on-rails">${details[3].tech4}</li>
+                  <li class="css">${details[3].tech3}</li>
+                  <li class="js">${details[3].tech2}</li>
+                  <li class="html">${details[3].tech1}</li>
+              </ul>
+              <div class="btn-container">
+                  <button type="button" class="btn" data-card= 'card3'>See Project</button>
+              </div>
+          </div>   
+          <div class="sample-containers">
+              <div class="sample-img-container">
+                  <img src=${details[4].imgSrc} alt="" class="sample-img" id="sample-img-1">
+              </div>
+              <div class="sample-img-txt-head-container">
+                  <h3 class="sample-img-head-txt">${details[4].projectName}</h3>
+              </div>
+              <ul class="code-lang-container">
+                  <li class="ruby-on-rails">${details[4].tech4}</li>
+                  <li class="css">${details[4].tech3}</li>
+                  <li class="js">${details[4].tech2}</li>
+                  <li class="html">${details[4].tech1}</li>
+              </ul>
+              <div class="btn-container">
+                <button type="button" class="btn" data-card= 'card4'>See Project</button>
+              </div>
+          </div>
+          <div class="sample-containers">
+              <div class="sample-img-container">
+                  <img src=${details[5].imgSrc} alt="" class="sample-img" id="sample-img-1">
+              </div>
+              <div class="sample-img-txt-head-container">
+                  <h3 class="sample-img-head-txt">${details[5].projectName}</h3>
+              </div>
+              <ul class="code-lang-container">
+                  <li class="ruby-on-rails">${details[5].tech4}</li>
+                  <li class="css">${details[5].tech3}</li>
+                  <li class="js">${details[5].tech2}</li>
+                  <li class="html">${details[5].tech1}</li>
+              </ul>
+              <div class="btn-container">
+                  <button type="button" class="btn" data-card= 'card5'>See Project</button>
+              </div>
+          </div>           
+      </article>`;
 };
 populateMain();
 
@@ -249,25 +253,25 @@ const openCloseProjDetails = (event) => {
   variables.project.style.overflow = 'auto';
   variables.project.classList.remove('sample-containers');
   variables.project.innerHTML = `
-    <section class='window-container'>
-        <div id="sample-img-container">
-            <img src=${details[num].imgSrc} alt="" class="sample-img">
-            <span id="sample-img-txt" data-num = ${num}>x</span>
-        </div>
-        <div class="sample-img-txt-head-container">
-            <h3 class="sample-img-head-txt">${details[num].projectName}</h3>
-        </div>
-        <ul class="code-lang-container">
-            <li id="popuprails">${details[num].tech4}</li>
-            <li class="css">${details[num].tech3}</li>
-            <li class="js">${details[num].tech2}</li>
-        </ul>
-        <p>${details[num].description}</p>
-        <div class="win-btn-container">
-            <a href='https://fobadara.github.io' class="window-btn" rel='norefferer noopener'><button type="button" data-card='project'>See Live <img src='images/see-live.svg' alt='Expand icon'></button></a>
-            <a href='https://github.com/fobadara' class="window-btn" target='_blank' rel='norefferer noopener'><button type="button" data-card='project'>Source<img src='images/white-github.png' alt='Github's icon'></button></a>
-        </div>
-    </section>`;
+      <section class='window-container'>
+          <div id="sample-img-container">
+              <img src=${details[num].imgSrc} alt="" class="sample-img">
+              <span id="sample-img-txt" data-num = ${num}>x</span>
+          </div>
+          <div class="sample-img-txt-head-container">
+              <h3 class="sample-img-head-txt">${details[num].projectName}</h3>
+          </div>
+          <ul class="code-lang-container">
+              <li id="popuprails">${details[num].tech4}</li>
+              <li class="css">${details[num].tech3}</li>
+              <li class="js">${details[num].tech2}</li>
+          </ul>
+          <p>${details[num].description}</p>
+          <div class="win-btn-container">
+              <a href='https://fobadara.github.io' class="window-btn" rel='norefferer noopener'><button type="button" data-card='project'>See Live <img src='images/see-live.svg' alt='Expand icon'></button></a>
+              <a href='https://github.com/fobadara' class="window-btn" target='_blank' rel='norefferer noopener'><button type="button" data-card='project'>Source<img src='images/white-github.png' alt='Github's icon'></button></a>
+          </div>
+      </section>`;
 
   // Close details window
   const closeProjectDetails = (event) => {
@@ -326,6 +330,40 @@ const validateForm = () => {
 
 for (let i = 0; i < variables.buttons.length; i += 1) {
   if (variables.buttons[i].innerText === 'Get in touch') {
-    variables.buttons[i].addEventListener('focus', validateForm);
+    variables.buttons[i].addEventListener('click', validateForm);
+    variables.buttons[i].addEventListener('blur', validateForm);
   }
 }
+
+// Code for localStorage API
+const populateName = () => {
+  const fullName = JSON.parse(localStorage.getItem('fullName'));
+  variables.fullName.value = fullName;
+};
+const populateEmail = () => {
+  const email = JSON.parse(localStorage.getItem('email'));
+  variables.email.value = email;
+};
+
+const checkStorage = (event) => {
+  if (event.target.dataset.name === 'full-name') {
+    if (variables.fullName.value === '') {
+      populateName();
+    } else {
+      const fullName = event.target.value;
+      localStorage.setItem('fullName', JSON.stringify(fullName));
+    }
+  } else if (event.target.dataset.email === 'email') {
+    if (variables.email.value === '') {
+      populateEmail();
+    } else {
+      const email = event.target.value;
+      localStorage.setItem('email', JSON.stringify(email));
+    }
+  }
+};
+variables.input.addEventListener('change', checkStorage);
+variables.email.addEventListener('change', checkStorage);
+
+window.addEventListener('load', populateName);
+window.addEventListener('load', populateEmail);
