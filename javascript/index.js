@@ -9,6 +9,9 @@ const variables = {
   project: document.querySelector('.project'),
   buttons: document.querySelectorAll('button'),
   shadow: document.querySelector('.shadow-div'),
+  input: document.querySelector('input'),
+  fullName: document.querySelector('#name'),
+  email: document.querySelector('#email'),
 };
 
 // Beginning of navigation pop-up
@@ -326,6 +329,40 @@ const validateForm = () => {
 
 for (let i = 0; i < variables.buttons.length; i += 1) {
   if (variables.buttons[i].innerText === 'Get in touch') {
-    variables.buttons[i].addEventListener('focus', validateForm);
+    variables.buttons[i].addEventListener('click', validateForm);
+    variables.buttons[i].addEventListener('blur', validateForm);
   }
 }
+
+// Code for localStorage API
+const populateName = () => {
+  const fullName = JSON.parse(localStorage.getItem('fullName'));
+  variables.fullName.value = fullName;
+};
+const populateEmail = () => {
+  const email = JSON.parse(localStorage.getItem('email'));
+  variables.email.value = email;
+};
+
+const checkStorage = (event) => {
+  if (event.target.dataset.name === 'full-name') {
+    if (variables.fullName.value === '') {
+      populateName();
+    } else {
+      const fullName = event.target.value;
+      localStorage.setItem('fullName', JSON.stringify(fullName));
+    }
+  } else if (event.target.dataset.email === 'email') {
+    if (variables.email.value === '') {
+      populateEmail();
+    } else {
+      const email = event.target.value;
+      localStorage.setItem('email', JSON.stringify(email));
+    }
+  }
+};
+variables.input.addEventListener('change', checkStorage);
+variables.email.addEventListener('change', checkStorage);
+
+window.addEventListener('load', populateName);
+window.addEventListener('load', populateEmail);
