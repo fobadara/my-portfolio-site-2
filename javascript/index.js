@@ -12,32 +12,52 @@ const variables = {
 };
 
 // Beginning of navigation pop-up
-function openMenu() {
+const openMenu = () => {
   if (variables.menu.classList.toggle('hamburger-toggle', true)) {
     variables.body.style.overflow = 'hidden';
     variables.menu.style.overflow = 'visible';
   }
-}
+};
 variables.hamburger.addEventListener('click', openMenu);
 
-function closeMenu() {
+const closeMenu = () => {
   variables.menu.classList.toggle('hamburger-toggle', false);
   variables.body.style.overflow = 'visible';
-}
+};
 variables.closeModal.addEventListener('click', closeMenu);
 
-function closeMenuWithNav() {
+const closeMenuWithNav = () => {
   for (let i = 0; i < variables.navList.length; i += 1) {
     variables.navList[i].addEventListener('click', closeMenu);
   }
-}
+};
 closeMenuWithNav();
 
 // Beginning of populate main-section
 const details = [
   {
     projectName: 'Keeping track of hundreds of components',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.',
+    tech1: 'HTML',
+    tech2: 'CSS',
+    tech3: 'Javascript',
+    tech4: 'Ruby on rails',
+    liveLink: '#',
+    srcLink: '#',
+  },
+  {
+    projectName: 'Keeping track of hundreds of components',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.',
+    tech1: 'HTML',
+    tech2: 'CSS',
+    tech3: 'Javascript',
+    tech4: 'Ruby on rails',
+    liveLink: '#',
+    srcLink: '#',
+  },
+  {
+    projectName: 'Keeping track of hundreds of components',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.',
     imgSrc: '#',
     tech1: 'HTML',
     tech2: 'CSS',
@@ -48,7 +68,7 @@ const details = [
   },
   {
     projectName: 'Keeping track of hundreds of components',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s',
     imgSrc: '#',
     tech1: 'HTML',
     tech2: 'CSS',
@@ -59,7 +79,7 @@ const details = [
   },
   {
     projectName: 'Keeping track of hundreds of components',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.',
     imgSrc: '#',
     tech1: 'HTML',
     tech2: 'CSS',
@@ -70,29 +90,7 @@ const details = [
   },
   {
     projectName: 'Keeping track of hundreds of components',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.',
-    imgSrc: '#',
-    tech1: 'HTML',
-    tech2: 'CSS',
-    tech3: 'Javascript',
-    tech4: 'Ruby on rails',
-    liveLink: '#',
-    srcLink: '#',
-  },
-  {
-    projectName: 'Keeping track of hundreds of components',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s., when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.',
-    imgSrc: '#',
-    tech1: 'HTML',
-    tech2: 'CSS',
-    tech3: 'Javascript',
-    tech4: 'Ruby on rails',
-    liveLink: '#',
-    srcLink: '#',
-  },
-  {
-    projectName: 'Keeping track of hundreds of components',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s',
     imgSrc: '#',
     imgSrcAlt: '#',
     tech1: 'HTML',
@@ -105,7 +103,7 @@ const details = [
 
 ];
 
-function populateMain() {
+const populateMain = () => {
   variables.sampleJobs.innerHTML = ` <div class="header-2-container">
                 <h2 class="header header-2">My Recent Works</h2>
                 </div>
@@ -216,10 +214,10 @@ function populateMain() {
             </div>
         </div>           
     </article>`;
-}
+};
 populateMain();
 
-function openCloseProjDetails(event) {
+const openCloseProjDetails = (event) => {
   const dataSet = event.target.dataset.card;
   let num = 0;
   if (dataSet === 'card0') {
@@ -240,6 +238,7 @@ function openCloseProjDetails(event) {
 
   variables.project.classList.add('window');
   variables.shadow.classList.add('shadow');
+  variables.shadow.overflow = 'hidden';
   window.scrollTo(
     {
       top: 100,
@@ -271,7 +270,7 @@ function openCloseProjDetails(event) {
     </section>`;
 
   // Close details window
-  function closeProjectDetails(event) {
+  const closeProjectDetails = (event) => {
     variables.project.classList.remove('window');
     variables.shadow.classList.remove('shadow');
     // Move screen card position after closing window
@@ -292,15 +291,41 @@ function openCloseProjDetails(event) {
         behavior: 'smooth',
       },
     );
-  }
+  };
   const closeBtn = document.querySelector('#sample-img-txt');
   closeBtn.addEventListener('click', closeProjectDetails);
-}
+};
 
-function getButton() {
+const getButton = () => {
   const buttons = document.querySelectorAll('button');
   for (let i = 0; i < buttons.length; i += 1) {
     buttons[i].addEventListener('click', openCloseProjDetails);
   }
-}
+};
 getButton();
+
+const validateForm = () => {
+  const mail = document.querySelector('#email');
+  const mailValue = mail.value;
+  const mailLower = mailValue.toLowerCase();
+  const message = document.querySelector('#message');
+  if (mailValue !== mailLower) {
+    message.innerText = `Please enter email in lowercase. For example: ${mailLower}`;
+    mail.style.border = 'solid thin gold';
+    mail.style.outline = 'solid thin gold';
+  } else if (mailValue === '') {
+    message.innerText = 'Email cannot be empty';
+    mail.style.border = 'solid thin gold';
+    mail.style.outline = 'solid thin gold';
+  } else {
+    message.innerText = '';
+    mail.style.border = 'initial';
+    mail.style.outline = 'solid thin #36b37f';
+  }
+};
+
+for (let i = 0; i < variables.buttons.length; i += 1) {
+  if (variables.buttons[i].innerText === 'Get in touch') {
+    variables.buttons[i].addEventListener('focus', validateForm);
+  }
+}
