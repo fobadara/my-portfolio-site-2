@@ -107,9 +107,10 @@ const details = [
 ];
 
 const populateMain = () => {
-  variables.sampleJobs.innerHTML = ` <div class="header-2-container">
-                  <h2 class="header header-2">My Recent Works</h2>
-                  </div>
+  variables.sampleJobs.innerHTML = ` 
+  <div class="header-2-container">
+    <h2 class="header header-2">My Recent Works</h2>
+  </div>
                   <div class="indicator">
                   <img src="#" alt="" id="indicator">
                   </div>
