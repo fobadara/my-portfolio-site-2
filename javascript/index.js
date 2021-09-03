@@ -12,6 +12,7 @@ const variables = {
 };
 
 // Beginning of navigation pop-up
+const openMe
 function openMenu() {
   if (variables.menu.classList.toggle('hamburger-toggle', true)) {
     variables.body.style.overflow = 'hidden';
