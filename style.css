@@ -8,7 +8,7 @@ body {
     url("images/frame.svg") no-repeat right 99%;
   background-size: contain, 10%;
   font-family: "Inter", sans-serif;
-  overflow-x: hidden;
+  overflow: visible;
 }
 
 * {
@@ -42,7 +42,6 @@ a {
 .paragraph {
   width: 90%;
   text-align: center;
-  font-size: 20px;
   color: #172b4d;
   font-weight: normal;
 }
@@ -134,7 +133,6 @@ button:active {
 
 .welcome {
   font-weight: bold;
-  font-size: 20px;
   width: fit-content;
   color: #172b4d;
   flex: 10;
@@ -280,7 +278,7 @@ button:active {
 /* Details window */
 .window {
   width: 90%;
-  height: 600px;
+  height: 90%;
   display: flex;
   justify-content: center;
   position: fixed;
@@ -290,11 +288,11 @@ button:active {
   z-index: 2;
   background-color: #fff;
   box-shadow: 0 16px 24px rgba(9, 33, 243, 0.08);
+  overflow: visible;
 }
 
 .window-container {
   width: 92%;
-  margin-bottom: 10em;
 }
 
 #sample-img-txt {
@@ -321,9 +319,8 @@ button:active {
 }
 
 .window p {
-  font-size: 80%;
   line-height: 1.5;
-  margin-top: 5px;
+  margin-top: 3px;
   color: #344563;
 }
 
@@ -611,6 +608,14 @@ textarea:valid {
   margin-left: 2.5em;
 }
 
+#message {
+  color: #dd0c0c;
+  width: 70%;
+  position: relative;
+  left: 15%;
+  top: 1em;
+}
+
 @media only screen and (min-width: 600px) {
   #home-paragraph {
     line-height: 1.6em;
@@ -666,19 +671,8 @@ textarea:valid {
     margin-bottom: 2em;
   }
 
-  .win-btn-container {
-    position: absolute;
-    bottom: 9.9em;
-    left: 61%;
-    width: 35%;
-  }
-
   .window-btn img {
     margin-left: 0.5em;
-  }
-
-  .window-container {
-    margin-bottom: 50em;
   }
 
   .sample-jobs {
@@ -730,10 +724,6 @@ textarea:valid {
   /* For details pop-up */
   .window #sample-img-container {
     height: 400px;
-  }
-
-  .win-btn-container {
-    bottom: 3.1em;
   }
 
   .aside-container {
@@ -794,6 +784,13 @@ textarea:valid {
       url("images/contact-form-illustratoin-3-desktop.svg") no-repeat;
     background-position: bottom left, 20% 100%, right 100%;
   }
+
+  #message {
+    position: relative;
+    text-align: left;
+    top: -2.5em;
+    left: 7.7em;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -809,37 +806,34 @@ textarea:valid {
   }
 
   .window {
-    width: 99%;
-    left: 2px;
-  }
-
-  .window-container {
-    margin-bottom: 60em;
+    max-width: 50%;
+    position: fixed;
+    height: 600px;
+    word-wrap: break-word;
+    left: 25%;
+    overflow: scroll;
   }
 
   .window #sample-img-container {
-    height: 500px;
+    height: 45vh;
   }
 
   #sample-img-txt {
     right: 50px;
   }
 
-  .window h3 {
-    font-size: 32px;
-  }
-
-  .window p {
-    font-size: 16px;
+  .window .sample-img-txt-head-container {
+    width: 50%;
   }
 
   .window .code-lang-container {
-    margin-top: 5em;
-    margin-bottom: 1em;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
   }
 
   .win-btn-container {
-    top: 37.5em;
+    transform: translate(18em, -11em);
+    width: 42%;
   }
 
   .cards {
